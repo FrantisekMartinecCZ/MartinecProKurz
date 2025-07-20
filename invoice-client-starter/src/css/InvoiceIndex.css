@@ -1,0 +1,147 @@
+/* src/invoices/InvoiceIndex.css */
+/* Design inspirovaný PersonIndex, ale v zelených odstínech */
+
+.invoice-index-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.2rem;
+}
+
+.invoice-index-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #047857; /* Tmavě zelená pro nadpis */
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.invoice-index-addbtn {
+    background: linear-gradient(90deg, #059669, #10B981);
+    color: white !important;
+    border-radius: 20px;
+    padding: 12px 28px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2);
+    transition: all 0.2s ease-in-out;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.invoice-index-addbtn:hover {
+    background: linear-gradient(90deg, #10B981, #059669);
+    box-shadow: 0 4px 16px rgba(5, 150, 105, 0.25);
+    color: #fff !important;
+}
+
+.invoice-index-card {
+   border-radius: 22px;
+   background: #1e1e1e;
+   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4), 0 1.5px 10px rgba(0,0,0,0.25);
+   border: 1px solid #333;
+   margin-bottom: 2rem;
+   color: #ccc;
+}
+
+.invoice-index-cardbody {
+    padding: 2.2rem;
+}
+
+.invoice-index-cardbody hr {
+    border-top: 1px solid #e3e8f0;
+}
+
+/* --- RESPONSIVE FILTR PRO MOBIL --- */
+.invoice-filter-row {
+  margin-bottom: 1rem;
+}
+
+/* Nové třídy pro správné skrytí/viditelnost filtru/tlačítka */
+.invoice-filter-desktop {
+  display: block;
+}
+.invoice-mobile-filter-btn {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .invoice-mobile-filter-btn {
+    display: block;
+    width: 100%;
+    background: #059669;
+    color: #fff;
+    font-size: 1.25rem;
+    border-radius: 14px;
+    border: none;
+    padding: 12px 0;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.14);
+    letter-spacing: 0.5px;
+    transition: background 0.18s;
+  }
+  /* Skryj filtr na mobilu v běžném layoutu */
+  .invoice-filter-desktop {
+    display: none !important;
+  }
+  .invoice-filter-row {
+    display: none !important;
+  }
+  /* Overlay a modal */
+  .mobile-filter-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1005;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+  }
+  .mobile-filter-modal {
+    background: #23272b;
+    border-radius: 18px;
+    padding: 2rem 1.2rem 1.2rem 1.2rem;
+    width: 96vw;
+    max-width: 410px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.45);
+    color: #fff;
+    position: relative;
+    animation: fadeIn 0.24s;
+    max-height: 92vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    margin: 2vh 0;
+  }
+  .mobile-filter-close {
+    position: absolute;
+    top: 0.7rem;
+    right: 1.2rem;
+    background: none;
+    color: #fff;
+    font-size: 1.45rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+@media (min-width: 901px) {
+  .invoice-mobile-filter-btn {
+    display: none !important;
+  }
+  .mobile-filter-overlay,
+  .mobile-filter-modal {
+    display: none;
+  }
+}
+
+/* Fade animace pro modal */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98);}
+  to { opacity: 1; transform: scale(1);}
+}

@@ -1,0 +1,73 @@
+.person-index-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.2rem;
+}
+
+.person-index-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #90caf9; /* Světlejší modrá pro tmavé pozadí */
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.person-index-addbtn {
+  background: linear-gradient(90deg, #2196f3, #64b5f6);
+  color: white !important;
+  border-radius: 20px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.25);
+  transition: background 0.2s, box-shadow 0.2s;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.person-index-addbtn:hover {
+  background: linear-gradient(90deg, #64b5f6, #2196f3);
+  box-shadow: 0 4px 16px rgba(33, 150, 243, 0.35);
+  color: #fff !important;
+}
+
+.person-index-card {
+  border-radius: 22px;
+  background: #1e1e1e; /* Tmavé pozadí */
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4), 0 1.5px 10px rgba(0,0,0,0.25);
+  border: 1px solid #333;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.person-index-cardbody {
+  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+}
+
+
+
+.person-detail-tablewrap {
+  overflow-x: auto;
+  margin-bottom: 3.5rem;
+  border-radius: 16px;
+  background: #121212;
+  padding-bottom: 200%;
+}
+
+.person-detail-table {
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  background: #1c1c1c;
+  color: #ddd;
+}
+
+/* Mobilní zařízení */
+@media (max-width: 700px) {
+  .person-detail-tablewrap {
+    margin-bottom: 5rem;
+  }
+}

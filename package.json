@@ -1,0 +1,20 @@
+{
+  "name": "aspnet_invoice_starter_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+ "start": "concurrently \"npm run dev-client\" \"npm run dev-api\"",
+  "dev-client": "npm --prefix invoice-client-starter run dev",
+  "dev-api": "dotnet run --project invoice-server-starter/Invoices.Api/Invoices.Api.csproj"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

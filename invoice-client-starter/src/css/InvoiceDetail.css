@@ -1,0 +1,30 @@
+.invoice-detail-simple-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.4em;
+  letter-spacing: 0.5px;
+}
+
+.invoice-detail-simple-back {
+  color: #397fe6;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.18rem;
+  transition: color 0.18s;
+}
+.invoice-detail-simple-back:hover {
+  color: #90caf9;
+  text-decoration: underline;
+}
+
+.invoice-detail-simple-link {
+  color: #397fe6;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.16s;
+}
+.invoice-detail-simple-link:hover {
+  color: #90caf9;
+  text-decoration: underline;
+}

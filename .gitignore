@@ -1,0 +1,20 @@
+# === Visual Studio / .NET backend ===
+invoice-server-starter/bin/
+invoice-server-starter/obj/
+invoice-server-starter/.vs/
+*.user
+*.suo
+*.sln.docstates
+invoice-server-starter/appsettings*.json
+
+# === Node.js / React frontend ===
+invoice-client-starter/node_modules/
+invoice-client-starter/.env
+invoice-client-starter/build/
+invoice-client-starter/dist/
+
+# === Obecně zbytečné soubory ===
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

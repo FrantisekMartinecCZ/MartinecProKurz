@@ -1,0 +1,14 @@
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\bin\Debug\net9.0\Invoices.Data.deps.json
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\bin\Debug\net9.0\Invoices.Data.runtimeconfig.json
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\bin\Debug\net9.0\Invoices.Data.dll
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\bin\Debug\net9.0\Invoices.Data.pdb
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\obj\Debug\net9.0\Invoices.Data.csproj.AssemblyReference.cache
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\obj\Debug\net9.0\Invoices.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\obj\Debug\net9.0\Invoices.Data.AssemblyInfoInputs.cache
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\obj\Debug\net9.0\Invoices.Data.AssemblyInfo.cs
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\obj\Debug\net9.0\Invoices.Data.csproj.CoreCompileInputs.cache
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\obj\Debug\net9.0\Invoices.Data.dll
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\obj\Debug\net9.0\refint\Invoices.Data.dll
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\obj\Debug\net9.0\Invoices.Data.pdb
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\obj\Debug\net9.0\Invoices.Data.genruntimeconfig.cache
+C:\aspnet_invoice_starter_project\invoice-server-starter\Invoices.Data\obj\Debug\net9.0\ref\Invoices.Data.dll

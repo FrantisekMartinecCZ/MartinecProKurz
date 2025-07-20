@@ -1,0 +1,178 @@
+/* ===== TMAVÉ MENU (desktop i mobil) ===== */
+
+nav {
+  margin: 2px auto;
+  border-radius: 12px;
+ 
+   padding: 0 10px;
+
+ margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+gap: 20px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 95px;
+  color: #ccc;
+  text-decoration: none;
+  transition: transform 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item.active {
+  transform: translateY(-5px);
+}
+
+.link-icon {
+  font-size: 50px;
+  color: #ccc;
+  margin-bottom: 8px;
+  transition: color 0.4s ease, transform 0.4s cubic-bezier(0.68, -0.55, 0.22, 1.55);
+}
+
+.nav-item.active .link-icon {
+  transform: translateY(-20px);
+}
+
+.nav-text {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  opacity: 1;
+  transform: translateY(38px);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.22, 1.55);
+  color: #ccc;
+  
+}
+
+.nav-item.active .nav-text {
+  font-size: 14px;
+  transform: translateY(16px);
+}
+
+/* Barvy aktivních ikon a textů */
+.nav-item.active .link-icon-person,
+.nav-item.active .nav-text-person {
+  color: #3d8bfd;
+}
+
+.nav-item.active .link-icon-invoice,
+.nav-item.active .nav-text-invoice {
+  color: #3ddc97;
+}
+
+.nav-item.active .link-icon-statistics,
+.nav-item.active .nav-text-statistics {
+  color: #f66;
+}
+
+
+
+/* ===== MOBILNÍ MENU ===== */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 1px 1px;
+  position: absolute;
+  top: 5px;
+  left: 18px;
+  z-index: 1001;
+  background: transparent;
+  border: none;
+  color: #ccc;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    padding-top: 60px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-nav {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 10px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    gap: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .menu-toggle:checked + .hamburger + .navbar-nav {
+    display: flex;
+  }
+
+  .nav-item {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 18px 5px;
+    border-bottom: 1px solid #444;
+    gap: 1px;
+    transform: none !important; /* zabrání skákání */
+  }
+
+  .link-icon {
+    flex-shrink: 0;
+    width: 26px;             /* menší šířka pro fixní velikost */
+    font-size: 22px;         /* menší velikost ikon */
+    margin: 0;
+    text-align: center;
+    color: #ccc;
+    transition: none !important; /* žádná animace */
+    transform: none !important;  /*vypnutí animace */
+  }
+
+  .nav-text {
+    flex: 1;
+    position: static;
+    font-size: 16px !important;
+    transform: none !important;
+    opacity: 1 !important;
+    color: #ccc;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .nav-item.active .link-icon {
+    transform: none !important;  /* aktivní ikony nehybné */
+  }
+
+  .nav-item.active {
+    transform: none !important;
+  }
+}

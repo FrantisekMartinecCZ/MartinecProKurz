@@ -1,0 +1,134 @@
+/* src/invoices/InvoiceTable.css */
+/* Design inspirovaný PersonTable.css, ale v zelených odstínech */
+
+
+.table-card-header {
+      background: #1c1c1c !important;
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.table-title {
+  font-size: 1.18rem;
+  color: #c6d008 !important;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-badge {
+  background: #263238 !important;
+  color: #c6d008 !important;
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 0.85em;
+  font-weight: 500;
+  margin-left: 10px;
+  line-height: 1;
+  display: inline-block;
+  min-width: 36px;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px #37474f; /* decentní rámeček */
+}
+
+.table-card-body {
+    padding: 0;
+}
+
+.table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.invoice-table {
+     width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #1a1a1a;
+  color: #ddd;
+}
+
+.invoice-table th,
+.invoice-table td {
+   padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  font-size: 1rem;
+}
+
+.invoice-table th {
+background: #1f1f1f;
+    color: #047857; /* Tmavě zelená */
+font-weight: 700;
+  border-bottom: 2px solid #444;
+  font-size: 1.05rem;
+}
+
+.invoice-table tr:last-child td {
+    border-bottom: none;
+}
+
+.invoice-table tr:hover {
+  background: #2c2c2c;
+}
+
+.table-link {
+    color: #059669; /* Středně zelená */
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.table-link:hover {
+    color: #047857;
+    text-decoration: underline;
+}
+
+.invoice-detail-action-group {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.invoice-form-action-btn {
+  border: none;
+  outline: none;
+  padding: 5px 13px;
+  border-radius: 20px;
+  font-size: 0.98rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.invoice-form-action-btn.info {
+   background: #0d47a1;
+  color: #bbdefb;
+}
+.invoice-form-action-btn.info:hover {
+   background: #1565c0;
+  color: #e3f2fd;
+}
+
+.invoice-form-action-btn.warn {
+   background: #7c4d00;
+  color: #ffecb3;
+}
+.invoice-form-action-btn.warn:hover {
+  background: #ff9800;
+  color: #fff8e1;
+}
+
+.invoice-form-action-btn.danger {
+  background: #b71c1c;
+  color: #ffcdd2;
+}
+.invoice-form-action-btn.danger:hover {
+   background: #e53935;
+  color: #ffebee;
+}

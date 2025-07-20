@@ -1,0 +1,93 @@
+.person-form-title {
+  color: #90caf9;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  letter-spacing: 0.4px;
+}
+
+.person-form-card {
+  background: #181a1b;
+  color: #e0e0e0;
+  border-radius: 18px;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.50);
+  border: 1px solid #292a2d;
+  margin-bottom: 2.2rem;
+}
+
+.person-form-card .card-header {
+  background: #212326;
+  color: #90caf9;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom: 1px solid #23252b;
+}
+
+.person-form-card .card-body {
+  background: transparent;
+  color: #e0e0e0;
+}
+
+.form-label, label {
+  color: #90caf9;
+  font-weight: 500;
+}
+
+.form-control, textarea, input[type="text"] {
+  background: #23272c;
+  color: #e0e0e0;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 0.7em 1.1em;
+  transition: border 0.18s;
+  margin-bottom: 0.7em;
+}
+
+.form-control:focus, input[type="text"]:focus, textarea:focus {
+  border: 1.5px solid #90caf9;
+  background: #212326;
+  color: #fff;
+  outline: none;
+}
+
+.btn-submit-person, .btn.btn-submit-person {
+  background: linear-gradient(90deg,#1976d2,#64b5f6);
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 22px;
+  border: none;
+  font-size: 1.12rem;
+  box-shadow: 0 2px 10px rgba(25,118,210,0.15);
+  transition: background 0.18s, box-shadow 0.18s;
+}
+
+.btn-submit-person:hover {
+  background: linear-gradient(90deg,#64b5f6,#1976d2);
+  color: #1e1e1e;
+  box-shadow: 0 4px 18px rgba(25,118,210,0.27);
+}
+
+.btn-outline-secondary, .btn-outline-secondary:visited {
+  background: #23272c;
+  color: #90caf9;
+  border: 1.5px solid #374151;
+  border-radius: 22px;
+  padding: 9px 22px;
+  transition: background 0.16s, color 0.16s, border 0.16s;
+}
+
+.btn-outline-secondary:hover {
+  background: #90caf9;
+  color: #181a1b;
+  border-color: #90caf9;
+}
+
+/* Error a success zprávy */
+.alert-danger {
+  background: #2e2222;
+  color: #ff9898;
+  border: 1px solid #c62828;
+}
